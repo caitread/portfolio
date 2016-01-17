@@ -1,5 +1,5 @@
 html, body, div, nav, ul, li {
-  	margin: 0;
+    margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
@@ -13,44 +13,47 @@ html, body, div, nav, ul, li {
 }
 
 body {
-	font-family: 'aaux next', sans-serif;
-	-webkit-font-smoothing: antialiased;
+    font-family: 'aaux next', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.top-navigation, .introduction, .cases {
+    min-width: 37.5rem;
 }
 .top-navigation {
-	background-color: #fff;
+    background-color: #fff;
     position: fixed;
-    width: 100%;
     border-bottom: 1px solid #DDD;
     z-index: 9999;
+    width: 100%;
 }
 
 .content {
-	padding: 0 0.938rem;
+    padding: 0 0.938rem;
     margin: 0 auto;
-    min-width: 37.5rem;	
     width: 90%;
 }
 
 .top-navigation > .content {
-	height: 6.375rem;
-	line-height: 6.375rem;
-	margin: 0 auto;
+    height: 6.375rem;
+    line-height: 6.375rem;
+    margin: 0 auto;
 }
 
 .top-navigation .logo {
-	height: 4.375rem;
-	vertical-align: middle;
+    height: 4.375rem;
+    vertical-align: middle;
 }
 
 .top-navigation .links {
-	float: right;
+    float: right;
     color: #838994;
     font-size: 1.04rem;    
 }
 
 .top-navigation .links > li {
-	display: inline-block;
-	vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
     margin-left: 1.563rem;
 
 }
@@ -61,8 +64,8 @@ body {
 }
 
 .top-navigation .links li:hover {
-	cursor: pointer;
-	color: #333333;
+    cursor: pointer;
+    color: #333333;
 }
 
 .introduction {
@@ -71,7 +74,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 55rem;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .introduction h1 {
@@ -85,70 +88,39 @@ body {
     color: white;
     text-align: center;
     font-family: 'rucksack', sans-serif;
-	font-weight: 300 !important;
+    font-weight: 300 !important;
     line-height: 25rem;
 }
 
 .introduction h1 {
-	margin-top: 220px;
-	font-size: 30px;
+    margin-top: 265px;
+    font-size: 30px;
 }
 
 .introduction h3 {
-	margin-top: -12px;
-	font-size: 20px;
+    margin-top: -12px;
+    font-size: 20px;
 }
-
-.cases h2{
-	font-size: 2.75rem;
-	color: #1d1e21;
-	font-weight: 300;
-}
-
-button {
-	text-shadow: none;
-    border-style: none;
-    border-radius: 4px;
-    padding: 16px 26px;
-    line-height: 1.33;
-    display: block;
-    margin: 0 auto;
-    width: 10%;
-    background-color: #f15a29;
-    border-color: #f15a29;
-    margin-top: 15px;
-	font-size: 13px;
-	color: white;
-}
-
-button:hover {
-    background-color: #d9400e;
-    border-color: #cf3d0e;
-    cursor: pointer;
-}
-
 .cases {
-    background-color: #fff;
+  margin: 0 auto;
     overflow: hidden;
-    padding-bottom: 5rem;
 }
-.cases .content {
-    margin-top: 7.875rem;
-    padding: none;
-    color: #1d1e21;
-    text-align: center;
-    }
+.works > li {
+    /*  box model */
+list-style: none;
+  width: 320px;
+    min-height: 300px;
+    padding: 10px;
+    border: 10px ;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+  justify-content: center;
+  text-align: center;
+    /* style */
+}
 
-.cases .works > li {
-    width: 33.3333333%;
-    float:left;
-    list-style: none;
-}
-
-.cases .works h3 {
-	font-size: 1.563rem;
-	font-weight: 400;
-}
+@media screen and (min-width: 700px) 
 .social {
     background-color: #fff;
     overflow: auto;
@@ -156,7 +128,7 @@ button:hover {
     text-align: center;
 }
 .social h5 {
-	font-weight: 300;
+    font-weight: 300;
 }
 
 }
@@ -166,7 +138,7 @@ button:hover {
     margin: 1.313rem 0;}
 
 .social .icons > li{
-	border-radius: 1.25rem;
+    border-radius: 1.25rem;
     width: 2.5rem;
     height: 2.5rem;
     display: inline-block;
